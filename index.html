@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torres & Guerrero | Abogado Penalista en Santiago · Delitos Económicos</title>
+<meta name="description" content="Estudio jurídico Torres & Guerrero, dirigido por el abogado penalista Rodrigo Torres Jurado. Defensa y representación en delitos económicos, tributarios, bancarios y societarios ante Fiscalía, Juzgados de Garantía y Tribunales Orales.">
+<meta name="theme-color" content="#0c1e36">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="canonical" href="https://www.torresguerrero.cl/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Torres & Guerrero | Abogado Penalista · Delitos Económicos">
+<meta property="og:description" content="Defensa penal estratégica en delitos económicos. Representación ante el Ministerio Público, Juzgados de Garantía y Tribunales Orales en lo Penal.">
+<meta property="og:image" content="assets/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Torres & Guerrero Estudio de Abogados",
+  "description": "Estudio jurídico especializado en defensa penal de delitos económicos.",
+  "image": "assets/og-image.jpg",
+  "telephone": "+56974783978",
+  "email": "contacto@torresguerrero.cl",
+  "founder": { "@type": "Person", "name": "Rodrigo Torres Jurado", "jobTitle": "Abogado penalista" },
+  "areaServed": "Chile",
+  "knowsAbout": ["Delitos económicos", "Delitos tributarios", "Delitos bancarios", "Delitos societarios", "Defensa penal"]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0c1e36;
+  --ink-2:#12294a;
+  --ink-3:#183660;
+  --paper:#f3f6fa;
+  --paper-2:#e6ecf4;
+  --line:#d3dce8;
+  --accent:#2557d6;
+  --accent-on-dark:#7fb0ff;
+  --accent-soft:#a9cbff;
+  --text:#1b2a3f;
+  --muted:#556579;
+  --on-dark:#e8eff8;
+  --on-dark-muted:#a3b3c8;
+  --wa:#1fa855;
+  --radius:6px;
+  --serif:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:24px}
+.serif{font-family:var(--serif)}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+.hero .eyebrow,.about .eyebrow,.contact .eyebrow{color:var(--accent-on-dark)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.025em;text-wrap:balance}
+h2{font-size:clamp(2rem,3.8vw,2.9rem);color:var(--ink)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:60ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s,border-color .2s,color .2s;font-family:var(--sans);line-height:1}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent-on-dark);outline-offset:3px}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-gold{background:var(--accent);color:#fff;box-shadow:0 10px 26px -12px rgba(37,87,214,.8)}
+.btn-gold:hover{transform:translateY(-2px);background:#1f4bc0}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{transform:translateY(-2px);background:#1b9a4e}
+.btn-ghost{border-color:rgba(232,239,248,.35);color:var(--on-dark)}
+.btn-ghost:hover{border-color:var(--accent-on-dark);color:#fff}
+.btn-dark{background:var(--ink);color:var(--on-dark)}
+.btn-dark:hover{background:var(--ink-3);transform:translateY(-2px)}
+
+/* topbar + nav */
+.topbar{background:#081627;color:var(--on-dark-muted);font-size:.8rem;letter-spacing:.02em}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:9px;flex-wrap:wrap}
+.topbar a{text-decoration:none;color:var(--on-dark)}
+.topbar a:hover{color:var(--accent-soft)}
+.topbar .sep{opacity:.35;margin-inline:10px}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(12,30,54,.92);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid rgba(127,176,255,.18)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--on-dark)}
+.brand img{width:44px;height:44px}
+.brand b{display:block;font-family:var(--serif);font-size:1.25rem;font-weight:700;letter-spacing:.04em;line-height:1;text-transform:uppercase}
+.brand small{display:block;font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent-on-dark);margin-top:4px}
+.nav ul{display:flex;gap:30px;list-style:none}
+.nav ul a{text-decoration:none;color:var(--on-dark);font-size:.9rem;font-weight:500;opacity:.85;transition:opacity .2s,color .2s}
+.nav ul a:hover{opacity:1;color:var(--accent-soft)}
+.nav .btn{padding:12px 20px;font-size:.88rem}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:var(--on-dark);overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(900px 520px at 85% 25%,rgba(70,130,255,.28),transparent 62%),
+  radial-gradient(700px 500px at 0% 100%,rgba(37,87,214,.22),transparent 60%),
+  linear-gradient(180deg,#0f2748,#0a1a30)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.045;background-image:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 88px)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center;padding-block:64px 80px}
+.hero h1{font-size:clamp(2.4rem,4.6vw,3.8rem);line-height:1.05;color:#ffffff;margin:20px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent-soft)}
+.hero .lead{color:var(--on-dark-muted);font-size:1.15rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:36px 0 44px}
+.stats{display:grid;grid-template-columns:repeat(3,auto);gap:0;justify-content:start;border-top:1px solid rgba(127,176,255,.25);padding-top:26px}
+.stats div{padding-right:34px;margin-right:34px;border-right:1px solid rgba(127,176,255,.22)}
+.stats div:last-child{border:0;margin:0;padding:0}
+.stats b{font-variant-numeric:lining-nums;display:block;font-family:var(--serif);font-size:2.3rem;font-weight:600;color:var(--accent-soft);line-height:1}
+.stats span{display:block;font-size:.8rem;color:var(--on-dark-muted);margin-top:8px;max-width:17ch;line-height:1.4}
+
+.portrait{position:relative;justify-self:center;width:100%;max-width:440px;box-shadow:0 40px 80px -36px rgba(0,0,0,.65);border-radius:var(--radius);overflow:hidden;background:#fff}
+.portrait .frame{position:relative;aspect-ratio:4/5;background:var(--ink-2)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.nameplate{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;background:#fff;color:var(--ink);padding:16px 22px 18px}
+.nameplate b{display:block;font-family:var(--serif);font-size:1.2rem;line-height:1.1;font-weight:700}
+.nameplate span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* forums strip */
+.forums{background:var(--paper-2);border-bottom:1px solid var(--line)}
+.forums .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px;flex-wrap:wrap}
+.forums p{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.forums ul{display:flex;gap:10px 34px;flex-wrap:wrap;list-style:none;font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--ink)}
+.forums li{display:flex;align-items:center;gap:12px}
+.forums li::before{content:"";width:7px;height:7px;background:var(--accent)}
+
+section{padding-block:104px}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head h2{margin:16px 0 18px}
+
+/* urgent */
+.urgent{background:var(--ink-3);color:var(--on-dark);padding-block:0}
+.urgent .wrap{display:flex;align-items:center;justify-content:space-between;gap:32px;padding-block:44px;flex-wrap:wrap}
+.urgent h3{font-size:clamp(1.7rem,3vw,2.3rem);color:#ffffff;max-width:26ch}
+.urgent h3 em{font-style:normal;color:var(--accent-soft)}
+.urgent p{color:var(--on-dark-muted);margin-top:10px;max-width:56ch;font-size:1rem}
+
+/* practice areas */
+.areas{background:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;background:#ffffff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px 30px;transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 44px -26px rgba(12,30,54,.35);border-color:var(--accent)}
+.card h3{font-size:1.4rem;color:var(--ink);margin:0 0 12px}
+.card p{font-size:.95rem;color:var(--muted)}
+.card.wide{grid-column:span 2}
+.tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags li{font-size:.85rem;font-weight:500;color:var(--ink-3);background:var(--paper-2);border:1px solid var(--line);border-radius:4px;padding:7px 13px;line-height:1.2}
+.card.dark{background:var(--ink);border-color:var(--ink);color:var(--on-dark)}
+.card.dark h3{color:#ffffff}
+.card.dark p{color:var(--on-dark-muted)}
+.card.dark .more{margin-top:auto;padding-top:22px;color:var(--accent-soft);font-weight:600;font-size:.9rem;text-decoration:none}
+.card.dark .more:hover{text-decoration:underline}
+
+/* about */
+.about{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center;position:relative}
+.about h2{color:#ffffff;margin:16px 0 22px}
+.about h2 em{font-style:normal;color:var(--accent-soft)}
+.about p{color:var(--on-dark-muted);margin-bottom:18px}
+.about .photo{border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);background:var(--ink-2)}
+.about .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.cases{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.case{border:1px solid rgba(127,176,255,.3);border-radius:12px;padding:20px 22px;background:rgba(255,255,255,.03)}
+.case small{display:block;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-on-dark);font-weight:600}
+.case b{font-variant-numeric:lining-nums;font-family:var(--serif);font-size:1.5rem;color:#ffffff;font-weight:600;display:block;margin-top:4px}
+.case span{font-size:.85rem;color:var(--on-dark-muted)}
+
+/* who we help */
+.who{background:var(--paper-2)}
+.who .grid{grid-template-columns:repeat(4,1fr)}
+.who .item{padding:26px 6px 0 0;border-top:1px solid var(--ink)}
+.who .item h3{font-size:1.3rem;color:var(--ink);margin-bottom:10px}
+.who .item p{font-size:.94rem;color:var(--muted)}
+
+/* process */
+.process{background:var(--paper)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:0 28px 0 0;position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:3rem;font-weight:600;color:var(--accent-on-dark);line-height:1;display:block;margin-bottom:14px}
+.step::after{content:"";position:absolute;top:32px;left:70px;right:14px;height:1px;background:linear-gradient(90deg,var(--accent-on-dark),transparent)}
+.step:last-child::after{display:none}
+.step h3{font-size:1.3rem;color:var(--ink);margin-bottom:8px}
+.step p{font-size:.94rem;color:var(--muted)}
+
+/* faq */
+.faq{background:var(--paper-2)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.faq-list{display:grid;gap:12px}
+details{background:#ffffff;border:1px solid var(--line);border-radius:12px;transition:border-color .2s}
+details[open]{border-color:var(--accent-on-dark)}
+summary{list-style:none;cursor:pointer;padding:22px 26px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:1.02rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-size:1.6rem;font-weight:500;color:var(--accent);line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 26px 24px;color:var(--muted);font-size:.97rem}
+
+/* contact */
+.contact{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 500px at 100% 0%,rgba(127,176,255,.14),transparent 60%)}
+.contact .wrap{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:start}
+.contact h2{color:#ffffff;margin:16px 0 20px}
+.contact h2 em{font-style:normal;color:var(--accent-soft)}
+.contact .lead{color:var(--on-dark-muted)}
+.info{margin-top:36px;display:grid;gap:22px}
+.info a,.info div{display:flex;gap:16px;text-decoration:none;align-items:flex-start}
+.info .ic{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid rgba(127,176,255,.4);display:grid;place-items:center;color:var(--accent-on-dark)}
+.info .ic svg{width:20px;height:20px}
+.info small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-on-dark);font-weight:600}
+.info b{font-weight:600;font-size:1.05rem;color:#ffffff;word-break:break-word}
+.info a:hover b{color:var(--accent-soft)}
+
+form{background:var(--paper);color:var(--text);border-radius:8px;padding:40px 38px 34px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+form h3{font-size:1.7rem;color:var(--ink);margin-bottom:6px}
+form>p{color:var(--muted);font-size:.93rem;margin-bottom:24px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{margin-bottom:14px}
+label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-bottom:7px}
+input,select,textarea{width:100%;font:inherit;font-size:.98rem;padding:14px 16px;border-radius:10px;border:1px solid var(--line);background:#ffffff;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,87,214,.22);outline:none}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.82rem;color:var(--muted);margin:6px 0 20px;line-height:1.5}
+.check input{width:18px;height:18px;flex:none;margin-top:2px;accent-color:var(--accent)}
+form .btn{width:100%;padding:17px}
+.alt{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px;font-size:.85rem;color:var(--muted)}
+.alt a{color:var(--ink);font-weight:600}
+.secret{display:flex;gap:10px;align-items:center;margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+.secret svg{width:18px;height:18px;flex:none;color:var(--accent)}
+
+/* footer */
+footer{background:#071322;color:var(--on-dark-muted);padding-block:64px 32px;font-size:.9rem}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px}
+footer img.logo{width:190px;height:auto;margin:0 0 18px -6px}
+footer h4{font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-on-dark);margin-bottom:16px;font-weight:600}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--accent-soft)}
+.legal{grid-column:1/-1;border-top:1px solid rgba(127,176,255,.16);padding-top:26px;margin-top:8px;font-size:.78rem;line-height:1.6;color:#7f90a6}
+
+/* floating */
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;color:#fff;box-shadow:0 12px 30px -8px rgba(0,0,0,.5);transition:transform .2s}
+.fab:hover{transform:scale(1.07)}
+.fab svg{width:30px;height:30px}
+.mobile-bar{display:none}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card,.fab{transition:none}
+}
+
+/* responsive */
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr;gap:64px;padding-block:56px 72px}
+  .portrait{justify-self:center;max-width:400px}
+  .grid,.who .grid{grid-template-columns:repeat(2,1fr)}
+  .card.wide{grid-column:span 2}
+  .about .wrap,.faq .wrap,.contact .wrap{grid-template-columns:1fr;gap:48px}
+  .about .photo{max-width:420px}
+  .steps{grid-template-columns:1fr 1fr;row-gap:44px}
+  .step::after{display:none}
+  .nav ul{display:none}
+  footer .wrap{grid-template-columns:1fr 1fr}
+  footer .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding-block:72px}
+  .wrap{padding-inline:18px}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .topbar .hide-sm{display:none}
+  .brand b{font-size:1.2rem}
+  .brand img{width:38px;height:38px}
+  .nav .btn{display:none}
+  .stats{grid-template-columns:1fr 1fr 1fr}
+  .stats div{padding-right:14px;margin-right:14px}
+  .stats b{font-size:2rem}
+  .stats span{font-size:.72rem}
+  .grid,.who .grid,.steps,.cases{grid-template-columns:1fr}
+  .card.wide{grid-column:auto}
+  .row{grid-template-columns:1fr}
+  form{padding:30px 22px 26px}
+  .urgent .btn{width:100%}
+  .cta-row .btn{width:100%}
+  footer .wrap{grid-template-columns:1fr}
+  .fab{display:none}
+  .mobile-bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);border-top:1px solid rgba(127,176,255,.3);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .mobile-bar .btn{padding:14px 10px;font-size:.9rem}
+  body{padding-bottom:72px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Atención con reserva y por agendamiento</span>
+    <span><a href="tel:+56974783978">+56 9 7478 3978</a><span class="sep">|</span><a href="mailto:contacto@torresguerrero.cl">contacto@torresguerrero.cl</a></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Torres & Guerrero, inicio">
+      <img src="assets/crest-mark.png" alt="" width="44" height="44">
+      <span><b>Torres &amp; Guerrero</b><small>Estudio de Abogados</small></span>
+    </a>
+    <ul>
+      <li><a href="#areas">Áreas de práctica</a></li>
+      <li><a href="#abogado">El abogado</a></li>
+      <li><a href="#proceso">Cómo trabajamos</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn btn-gold" href="#contacto">Consulte su caso</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Abogado penalista · Delitos económicos</span>
+      <h1>Defensa penal <em>estratégica</em> cuando su patrimonio y su libertad están en juego.</h1>
+      <p class="lead">Representamos a personas y empresas investigadas, imputadas o querellantes en delitos económicos, desde la primera citación de la Fiscalía hasta el juicio oral. Con criterio, reserva y dedicación exclusiva a cada caso.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#contacto">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Solicitar evaluación de mi caso
+        </a>
+        <a class="btn btn-ghost" href="tel:+56974783978">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          +56 9 7478 3978
+        </a>
+      </div>
+      <div class="stats">
+        <div><b>+6</b><span>años defendiendo en sede penal</span></div>
+        <div><b>3</b><span>instancias: Fiscalía, Garantía y Juicio Oral</span></div>
+        <div><b>Reserva</b><span>secreto profesional en cada consulta</span></div>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <div class="frame">
+        <picture>
+          <source srcset="assets/rodrigo-torres.webp" type="image/webp">
+          <img src="assets/rodrigo-torres.jpg" alt="Rodrigo Torres Jurado, abogado penalista y director de Torres & Guerrero" width="1000" height="1250" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="nameplate">
+        <b>Rodrigo Torres Jurado</b>
+        <span>Abogado penalista · Director</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOROS -->
+<div class="forums">
+  <div class="wrap">
+    <p>Representación y defensa ante</p>
+    <ul>
+      <li>Ministerio Público</li>
+      <li>Juzgados de Garantía</li>
+      <li>Tribunales Orales en lo Penal</li>
+    </ul>
+  </div>
+</div>
+
+<!-- URGENTE -->
+<div class="urgent">
+  <div class="wrap">
+    <div>
+      <h3>¿Lo citó la Fiscalía o le notificaron una <em>querella</em>?</h3>
+      <p>Las primeras actuaciones de una investigación pesan mucho en su resultado. Consulte con un abogado penalista antes de prestar declaración.</p>
+    </div>
+    <a class="btn btn-wa" href="https://wa.me/56974783978?text=Hola%2C%20necesito%20asesor%C3%ADa%20penal%20urgente." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Escribir por WhatsApp ahora
+    </a>
+  </div>
+</div>
+
+<!-- AREAS -->
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Áreas de práctica</span>
+      <h2>Especialistas en delitos económicos</h2>
+      <p class="lead">Defensa y representación en todo el espectro de la criminalidad económica, con foco en casos de alta complejidad probatoria y financiera.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card wide reveal">
+        <h3>Delitos contra la propiedad</h3>
+        <ul class="tags">
+          <li>Hurto</li><li>Robo</li><li>Receptación</li><li>Usurpación</li><li>Estafas</li><li>Giro doloso de cheques</li><li>Defraudaciones</li><li>Apropiación indebida</li><li>Usura</li><li>Daños</li><li>Incendio</li><li>Falsificaciones</li><li>Ejercicio ilegal de la profesión</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h3>Delitos tributarios y aduaneros</h3>
+        <p>Delitos tributarios, infracciones a la Ordenanza de Aduanas y a las leyes de Propiedad Intelectual e Industrial.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Delitos funcionarios</h3>
+        <p>Malversación de caudales públicos, fraude al fisco y negociaciones incompatibles.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Delitos societarios</h3>
+        <p>Uso de información privilegiada, revelación de secretos de la industria y figuras afines.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Delitos bancarios</h3>
+        <p>Obtención de créditos fraudulentos e invasión irregular del giro bancario.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Delitos de la quiebra</h3>
+        <p>Defensa en casos de quiebra culpable o fraudulenta.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Ley de Mercado de Valores</h3>
+        <p>Falsedades, transacciones ficticias o fraudulentas y demás infracciones penales de la ley.</p>
+      </article>
+      <article class="card dark reveal">
+        <h3>Acciones civiles por perjuicios</h3>
+        <p>Interposición y defensa en demandas civiles de indemnización de perjuicios derivadas de estos delitos.</p>
+        <a class="more" href="#contacto">Consultar mi caso →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="abogado">
+  <div class="wrap">
+    <div class="photo reveal">
+      <picture>
+        <source srcset="assets/rodrigo-oficina.webp" type="image/webp">
+        <img src="assets/rodrigo-oficina.jpg" alt="Rodrigo Torres Jurado en su oficina, con vista a Santiago" loading="lazy" width="1000" height="1339">
+      </picture>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Quién lo defenderá</span>
+      <h2>Rodrigo <em>Torres Jurado</em></h2>
+      <p>Abogado penalista especialista en delitos económicos y director de Torres &amp; Guerrero. Con más de seis años de ejercicio profesional, ha estado a cargo de la defensa y representación en importantes casos de delitos económicos, ante el Ministerio Público, los Juzgados de Garantía y los Tribunales Orales en lo Penal.</p>
+      <p>Su enfoque combina lectura técnica de la carpeta investigativa, una estrategia definida desde el inicio y comunicación directa con el cliente: usted sabe en qué etapa está su caso y cuáles son sus alternativas.</p>
+      <div class="cases">
+        <div class="case"><small>Caso emblemático</small><b>Publicam</b><span>Defensa y representación</span></div>
+        <div class="case"><small>Caso emblemático</small><b>Fermex</b><span>Defensa y representación, entre otros</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">A quién representamos</span>
+      <h2>Cada situación exige una estrategia distinta</h2>
+    </div>
+    <div class="grid">
+      <div class="item reveal"><h3>Personas investigadas</h3><p>Si fue citado a declarar o sabe que existe una investigación en su contra, actuar a tiempo marca la diferencia.</p></div>
+      <div class="item reveal"><h3>Empresarios y ejecutivos</h3><p>Defensa de socios, directores y gerentes frente a imputaciones vinculadas a la gestión de la empresa.</p></div>
+      <div class="item reveal"><h3>Empresas</h3><p>Representación de sociedades imputadas o afectadas por delitos económicos cometidos en su contra.</p></div>
+      <div class="item reveal"><h3>Víctimas y querellantes</h3><p>Querellas y demandas civiles de indemnización para recuperar lo perdido y perseguir la responsabilidad.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="proceso">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Un camino claro desde la primera llamada</h2>
+      <p class="lead">Sin sorpresas ni tecnicismos innecesarios. Usted decide informado en cada etapa.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Contacto reservado</h3><p>Nos cuenta su situación por teléfono, WhatsApp o en nuestra oficina. Todo bajo secreto profesional.</p></div>
+      <div class="step reveal"><h3>Análisis del caso</h3><p>Revisamos antecedentes y la etapa procesal para identificar riesgos y alternativas reales.</p></div>
+      <div class="step reveal"><h3>Estrategia de defensa</h3><p>Definimos una línea de acción concreta y le explicamos con claridad cada paso a seguir.</p></div>
+      <div class="step reveal"><h3>Representación integral</h3><p>Lo acompañamos en la investigación, las audiencias y el juicio oral, hasta el cierre del caso.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 style="margin:16px 0 18px">Lo que suelen preguntarnos</h2>
+      <p class="lead">¿Su duda no está aquí? Escríbanos y le respondemos con reserva.</p>
+      <a class="btn btn-dark" style="margin-top:28px" href="#contacto">Hacer una consulta</a>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>¿Qué es un delito económico?</summary>
+        <p>Son delitos que afectan el patrimonio, el orden económico o el funcionamiento del mercado: estafas, defraudaciones, delitos tributarios, bancarios, societarios, de quiebra o de la Ley de Mercado de Valores, entre otros. Suelen exigir análisis contable, financiero y documental complejo.</p>
+      </details>
+      <details>
+        <summary>Me citaron a declarar en la Fiscalía. ¿Qué debo hacer?</summary>
+        <p>Consulte con un abogado penalista antes de presentarse. Usted tiene derecho a contar con defensa desde la primera actuación y a guardar silencio. Lo que declare puede incidir en todo el proceso, por lo que conviene preparar la comparecencia con anticipación.</p>
+      </details>
+      <details>
+        <summary>¿Puedo consultar si soy la víctima de un fraude?</summary>
+        <p>Sí. Además de la defensa de imputados, representamos a víctimas y querellantes, tanto en la persecución penal como en las demandas civiles de indemnización de perjuicios asociadas al delito.</p>
+      </details>
+      <details>
+        <summary>¿Mi consulta es confidencial?</summary>
+        <p>Absolutamente. Toda la información que nos entregue está protegida por el secreto profesional que rige la relación entre abogado y cliente, incluso si finalmente no contrata nuestros servicios.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto cuesta la defensa penal?</summary>
+        <p>Los honorarios dependen de la complejidad del caso, su etapa procesal y la carga de trabajo estimada. En la evaluación inicial le explicamos las alternativas y le presentamos una propuesta clara antes de comenzar.</p>
+      </details>
+      <details>
+        <summary>¿Cómo puedo agendar una reunión?</summary>
+        <p>Puede llamarnos al +56 9 7478 3978, escribirnos por WhatsApp o completar el formulario de esta página, y coordinamos día y hora para atenderlo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Hablemos de su caso, <em>con reserva</em></h2>
+      <p class="lead">Cuéntenos brevemente su situación. Le responderemos a la brevedad para orientarlo sobre los pasos a seguir.</p>
+
+      <div class="info">
+        <a href="tel:+56974783978">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span><small>Teléfono / WhatsApp</small><b>+56 9 7478 3978</b></span>
+        </a>
+        <a href="mailto:contacto@torresguerrero.cl">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <span><small>Correo electrónico</small><b>contacto@torresguerrero.cl</b></span>
+        </a>
+      </div>
+
+    </div>
+
+    <form id="lead" class="reveal" novalidate>
+      <h3>Solicite una evaluación</h3>
+      <p>Complete el formulario y continuaremos la conversación por WhatsApp.</p>
+
+      <div class="row">
+        <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required placeholder="Su nombre completo"></div>
+        <div class="field"><label for="fono">Teléfono</label><input id="fono" name="fono" type="tel" autocomplete="tel" required placeholder="+56 9 ..."></div>
+      </div>
+      <div class="field"><label for="email">Correo <span style="text-transform:none;letter-spacing:0;font-weight:500;color:var(--muted)">(opcional)</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="usted@correo.cl"></div>
+      <div class="field">
+        <label for="tipo">Tipo de caso</label>
+        <select id="tipo" name="tipo">
+          <option>Estafa o defraudación</option>
+          <option>Delito tributario o aduanero</option>
+          <option>Delito bancario o societario</option>
+          <option>Delito funcionario</option>
+          <option>Mercado de valores</option>
+          <option>Quiebra</option>
+          <option>Querella o demanda civil (soy víctima)</option>
+          <option selected>Otro / no estoy seguro</option>
+        </select>
+      </div>
+      <div class="field"><label for="msg">Cuéntenos brevemente</label><textarea id="msg" name="msg" placeholder="¿En qué etapa está el caso? ¿Fue citado, detenido o notificado de una querella?"></textarea></div>
+
+      <label class="check" style="text-transform:none;letter-spacing:0;font-weight:400;margin-bottom:20px">
+        <input type="checkbox" id="ok" required>
+        <span>Autorizo a Torres &amp; Guerrero a usar estos datos únicamente para contactarme por mi consulta.</span>
+      </label>
+
+      <button class="btn btn-wa" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Enviar por WhatsApp
+      </button>
+      <div class="alt"><span>¿Prefiere el correo?</span><a href="#" id="mailto">Enviar por email</a></div>
+      <div class="secret">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>Su consulta está protegida por el secreto profesional.</span>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img class="logo" src="assets/logo-light.webp" alt="Torres & Guerrero Estudio de Abogados" loading="lazy" width="670" height="740">
+    </div>
+    <div>
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#areas">Áreas de práctica</a></li>
+        <li><a href="#abogado">El abogado</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+56974783978">+56 9 7478 3978</a></li>
+        <li><a href="mailto:contacto@torresguerrero.cl">contacto@torresguerrero.cl</a></li>
+      </ul>
+    </div>
+    <p class="legal">© <span id="y">2026</span> Torres &amp; Guerrero Estudio de Abogados. Toda la información de este sitio es de carácter general e informativo y no constituye asesoría jurídica ni promesa de resultados. Cada caso es único y requiere un análisis particular.</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/56974783978?text=Hola%2C%20quisiera%20consultar%20por%20un%20caso%20penal." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a class="btn btn-ghost" href="tel:+56974783978">Llamar</a>
+  <a class="btn btn-wa" href="https://wa.me/56974783978?text=Hola%2C%20quisiera%20consultar%20por%20un%20caso%20penal." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var PHONE = "56974783978", EMAIL = "contacto@torresguerrero.cl";
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  // scroll reveal
+  var els = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+    els.forEach(function(el, i){ el.style.transitionDelay = (i % 4) * 70 + "ms"; io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add("in"); }); }
+
+  // lead form -> WhatsApp / mailto (no backend needed)
+  var form = document.getElementById("lead");
+  function build() {
+    var f = form.elements;
+    var lines = [
+      "Hola, quisiera una evaluación de mi caso.",
+      "",
+      "Nombre: " + f.nombre.value.trim(),
+      "Teléfono: " + f.fono.value.trim()
+    ];
+    if (f.email.value.trim()) lines.push("Correo: " + f.email.value.trim());
+    lines.push("Tipo de caso: " + f.tipo.value);
+    if (f.msg.value.trim()) lines.push("", f.msg.value.trim());
+    return lines.join("\n");
+  }
+  function valid() {
+    var f = form.elements;
+    if (!f.nombre.value.trim()) { f.nombre.focus(); return false; }
+    if (!f.fono.value.trim()) { f.fono.focus(); return false; }
+    if (!f.ok.checked) { f.ok.focus(); return false; }
+    return true;
+  }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    if (!valid()) { form.reportValidity && form.reportValidity(); return; }
+    window.open("https://wa.me/" + PHONE + "?text=" + encodeURIComponent(build()), "_blank", "noopener");
+  });
+  document.getElementById("mailto").addEventListener("click", function(e){
+    e.preventDefault();
+    if (!valid()) { form.reportValidity && form.reportValidity(); return; }
+    location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Consulta penal desde el sitio web") + "&body=" + encodeURIComponent(build());
+  });
+})();
+</script>
+</body>
+</html>
