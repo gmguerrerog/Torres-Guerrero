@@ -30,7 +30,9 @@ Luego abrir `http://localhost:4173` en el navegador.
 
 ## Publicar
 
-El sitio no requiere backend: el formulario de contacto arma un mensaje de WhatsApp (o un `mailto:`) en el navegador del visitante, sin servidor propio. Puede desplegarse en cualquier hosting estático (Cloudflare Pages, Netlify, Vercel, GitHub Pages, etc.) apuntando la raíz a esta carpeta.
+El sitio no requiere backend: el formulario de contacto arma un mensaje de WhatsApp (o un `mailto:`) en el navegador del visitante, sin servidor propio.
+
+**Estado actual:** en producción en [torresguerrero.cl](https://torresguerrero.cl), servido por **Cloudflare Pages** (proyecto `torres-guerrero`), conectado a este repositorio. Cada `git push` a `main` dispara un deploy automático — no hace falta ningún paso manual adicional.
 
 ### Datos de contacto a mantener actualizados
 
@@ -44,4 +46,3 @@ Los siguientes datos están repetidos en varios lugares de `index.html` (barra s
 
 - Agregar la dirección física del estudio una vez definida.
 - Confirmar que el correo `contacto@torresguerrero.cl` sea el definitivo.
-- Confirmar con Rodrigo Torres si los casos "Publicam" y "Fermex" pueden mencionarse públicamente.
