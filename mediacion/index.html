@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mediación Torres Jurado</title>
+<meta name="description" content="Mediación familiar, en salud y financiera con Rodrigo Torres Jurado, abogado mediador.">
+<meta name="theme-color" content="#0f2a3d">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="canonical" href="https://www.torresguerrero.cl/mediacion/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Mediación Torres Jurado">
+<meta property="og:description" content="Mediación familiar, en salud y financiera con Rodrigo Torres Jurado, abogado mediador.">
+<meta property="og:url" content="https://www.torresguerrero.cl/mediacion/">
+<meta property="og:image" content="https://www.torresguerrero.cl/assets/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+[hidden] { display: none !important; }
+:root {
+  color-scheme: light;
+  --ink: #0f2a3d;
+  --ink-2: #3c5466;
+  --muted: #6b7f8e;
+  --bg: #fbf8f3;
+  --tint: #f2ece2;
+  --line: #e4dccf;
+  --accent: #2f7d6d;
+  --accent-dark: #22604f;
+  --gold: #c49a5a;
+  --white: #fff;
+  --radius: 18px;
+  --shadow: 0 20px 50px -24px rgba(15, 42, 61, .35);
+  --serif: "Fraunces", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink-2);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--serif); color: var(--ink); line-height: 1.15; margin: 0 0 .5em; font-weight: 600; }
+h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); letter-spacing: -.02em; }
+h1 em { font-style: italic; color: var(--accent); font-weight: 500; }
+h2 { font-size: clamp(1.9rem, 3.6vw, 2.75rem); letter-spacing: -.015em; }
+h3 { font-size: 1.25rem; }
+p { margin: 0 0 1em; }
+
+.container { width: min(1160px, 100% - 32px); margin-inline: auto; }
+.narrow { width: min(820px, 100% - 32px); }
+.eyebrow {
+  font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1rem;
+}
+.eyebrow--light { color: var(--gold); }
+.lead { font-size: 1.15rem; color: var(--ink-2); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+  padding: .95rem 1.6rem; border-radius: 999px; font-weight: 600; font-size: .98rem;
+  text-decoration: none; border: 1.5px solid transparent; cursor: pointer;
+  transition: transform .2s, background .2s, box-shadow .2s, color .2s;
+  font-family: inherit;
+}
+.btn svg { width: 20px; height: 20px; fill: currentColor; }
+.btn--primary { background: var(--ink); color: var(--white); box-shadow: 0 10px 24px -12px rgba(15,42,61,.6); }
+.btn--primary:hover { background: var(--accent); transform: translateY(-2px); }
+.btn--ghost { border-color: var(--ink); color: var(--ink); background: transparent; }
+.btn--ghost:hover { background: var(--ink); color: var(--white); }
+.btn--sm { padding: .6rem 1.15rem; font-size: .9rem; }
+.btn--block { width: 100%; }
+
+/* Nav */
+.nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  background: rgba(251, 248, 243, .85); backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent; transition: border-color .3s;
+}
+.nav.is-scrolled { border-color: var(--line); }
+.nav__inner { display: flex; align-items: center; gap: 2rem; height: 72px; }
+.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+.brand__mark {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px;
+  background: var(--ink); color: var(--white); font-family: var(--serif); font-weight: 600; font-size: 1rem;
+}
+.brand__text { display: flex; flex-direction: column; font-family: var(--serif); font-weight: 600; color: var(--ink); font-size: 1.1rem; line-height: 1.1; }
+.brand__text small { font-family: var(--sans); font-weight: 500; font-size: .72rem; color: var(--muted); letter-spacing: .04em; }
+.brand--light .brand__mark { background: var(--gold); color: var(--ink); }
+.brand--light .brand__text { color: var(--white); }
+.brand--light .brand__text small { color: rgba(255,255,255,.6); }
+.nav__links { display: flex; gap: 1.8rem; margin-left: auto; }
+.nav__links a { text-decoration: none; font-size: .94rem; font-weight: 500; color: var(--ink-2); transition: color .2s; }
+.nav__links a:hover { color: var(--accent); }
+.nav__toggle { display: none; background: none; border: 0; width: 40px; height: 40px; cursor: pointer; padding: 8px; }
+.nav__toggle span { display: block; height: 2px; background: var(--ink); margin: 6px 0; transition: transform .3s; }
+
+/* Hero */
+.hero { position: relative; padding: clamp(3rem, 7vw, 6rem) 0 clamp(4rem, 8vw, 7rem); overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: -20% -10% auto auto; width: 60vw; height: 60vw; max-width: 760px; max-height: 760px;
+  background: radial-gradient(circle, rgba(47,125,109,.14), transparent 65%); z-index: -1;
+}
+.hero__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; margin: 2rem 0 2.5rem; }
+.hero__trust { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.hero__trust li { display: flex; flex-direction: column; font-size: .88rem; }
+.hero__trust strong { color: var(--ink); font-size: .98rem; }
+.hero__trust span { color: var(--muted); }
+.hero__media { position: relative; }
+.portrait {
+  margin: 0; position: relative; border-radius: 28px 28px 28px 120px; overflow: hidden;
+  aspect-ratio: 4 / 5; background: linear-gradient(160deg, #1d4258, var(--ink)); box-shadow: var(--shadow);
+}
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
+.portrait figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 3rem 1.6rem 1.4rem;
+  background: linear-gradient(transparent, rgba(15,42,61,.85)); color: var(--white); text-align: right;
+  display: flex; flex-direction: column;
+}
+.portrait figcaption strong { font-family: var(--serif); font-size: 1.2rem; }
+.portrait figcaption span { font-size: .85rem; opacity: .8; }
+.floating-card {
+  position: absolute; left: -2rem; top: 12%; display: flex; gap: .8rem; align-items: center;
+  background: var(--white); padding: .9rem 1.2rem; border-radius: 14px; box-shadow: var(--shadow);
+  animation: float 5s ease-in-out infinite;
+}
+.floating-card div { display: flex; flex-direction: column; font-size: .8rem; color: var(--muted); line-height: 1.35; }
+.floating-card strong { color: var(--ink); font-size: .9rem; }
+.floating-card__dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(47,125,109,.18); }
+@keyframes float { 50% { transform: translateY(-10px); } }
+
+/* Fallback when photo missing */
+.img-fallback {
+  width: 100%; height: 100%; display: grid; place-items: center;
+  font-family: var(--serif); font-size: clamp(4rem, 10vw, 7rem); color: rgba(255,255,255,.9);
+  background: linear-gradient(160deg, #2a5872, var(--ink));
+}
+
+/* Sections */
+.section { padding: clamp(4rem, 9vw, 7.5rem) 0; }
+.section--tint { background: var(--tint); }
+.section--dark { background: var(--ink); color: rgba(255,255,255,.75); }
+.section--dark h2 { color: var(--white); }
+.section__head { max-width: 640px; margin-bottom: 3rem; }
+.split { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 5vw, 5rem); margin-bottom: 4rem; }
+
+/* Benefits */
+.benefits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.benefit { padding: 1.8rem; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); transition: transform .3s, box-shadow .3s; }
+.benefit:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.benefit p { font-size: .95rem; margin: 0; }
+.benefit__icon { width: 48px; height: 48px; border-radius: 14px; background: rgba(47,125,109,.1); display: grid; place-items: center; margin-bottom: 1.2rem; }
+.benefit__icon svg, .contact__list svg { width: 24px; height: 24px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.card { background: var(--white); border-radius: var(--radius); padding: 2rem; position: relative; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+.card::after { content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 0; background: var(--accent); transition: width .4s; }
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.card:hover::after { width: 100%; }
+.card p { font-size: .95rem; margin: 0; }
+.card__tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin-bottom: .8rem; }
+
+/* Steps */
+.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; counter-reset: s; }
+.step { position: relative; padding-top: 1.5rem; border-top: 2px solid var(--line); }
+.step::before { content: ""; position: absolute; top: -2px; left: 0; width: 48px; height: 2px; background: var(--accent); }
+.step__n { font-family: var(--serif); font-size: 2.6rem; color: var(--gold); line-height: 1; display: block; margin-bottom: 1rem; }
+.step p { font-size: .95rem; }
+
+/* Compare */
+.compare { border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,.12); }
+.compare__row { display: grid; grid-template-columns: 1.1fr 1fr 1fr; padding: 1.1rem 1.6rem; border-top: 1px solid rgba(255,255,255,.08); }
+.compare__row:first-child { border-top: 0; }
+.compare__row--head { background: rgba(255,255,255,.05); font-weight: 600; color: var(--white); }
+.compare__row span:first-child { color: var(--white); font-weight: 500; }
+.compare .yes { color: #7fd3bd; font-weight: 600; }
+.compare .yes::before { content: "✓  "; }
+
+/* About */
+.about { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(2rem, 6vw, 5.5rem); align-items: center; }
+.about__media { border-radius: 120px 28px 28px 28px; overflow: hidden; aspect-ratio: 6 / 7; box-shadow: var(--shadow); background: var(--ink); }
+.about__media img { width: 100%; height: 100%; object-fit: cover; }
+.credentials { list-style: none; padding: 0; margin: 1.8rem 0 2.2rem; display: grid; gap: .1rem; }
+.credentials li { display: grid; grid-template-columns: 120px 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); font-size: .96rem; color: var(--ink); }
+.credentials span { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 600; padding-top: .2rem; }
+
+/* FAQ */
+.faq { display: grid; gap: .8rem; }
+.faq details { background: var(--white); border-radius: 14px; padding: 0 1.5rem; border: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer; padding: 1.25rem 2rem 1.25rem 0; font-weight: 600; color: var(--ink); position: relative;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: var(--accent); transition: transform .3s; font-weight: 400; }
+.faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq details p { padding-bottom: 1.25rem; margin: 0; font-size: .97rem; }
+
+/* Contact */
+.contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.contact__list { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1rem; }
+.contact__list li { display: flex; gap: .9rem; align-items: center; }
+.contact__list a { text-decoration: none; font-weight: 500; color: var(--ink); }
+.contact__list a:hover { color: var(--accent); }
+.form { background: var(--white); padding: clamp(1.5rem, 4vw, 2.5rem); border-radius: 24px; box-shadow: var(--shadow); display: grid; gap: 1.1rem; }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form label { display: grid; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--ink); }
+.form input, .form select, .form textarea {
+  font: inherit; font-size: .98rem; font-weight: 400; padding: .85rem 1rem; border-radius: 12px;
+  border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); transition: border-color .2s, box-shadow .2s; width: 100%;
+}
+.form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(47,125,109,.12); }
+.form .is-invalid { border-color: #c0392b; }
+.form__note { font-size: .8rem; color: var(--muted); text-align: center; margin: 0; }
+
+/* Footer */
+.footer { background: #0a1f2e; color: rgba(255,255,255,.6); padding: 2.5rem 0; font-size: .88rem; }
+.footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.footer p { margin: 0; }
+.footer a { color: var(--gold); text-decoration: none; }
+
+/* WhatsApp float */
+.wa-float {
+  position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); z-index: 60; width: 58px; height: 58px; border-radius: 50%;
+  background: #25d366; display: grid; place-items: center; box-shadow: 0 12px 30px -10px rgba(0,0,0,.4); transition: transform .2s;
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 30px; height: 30px; fill: var(--white); }
+
+/* Reveal */
+.reveal { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .floating-card { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .benefits, .steps { grid-template-columns: repeat(2, 1fr); }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px) {
+  .nav__links {
+    position: fixed; inset: 72px 0 auto 0; flex-direction: column; gap: 0; background: var(--bg);
+    padding: .5rem 16px 1.5rem; border-bottom: 1px solid var(--line);
+    transform: translateY(-120%); transition: transform .35s; z-index: -1;
+  }
+  .nav__links a { padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .nav.is-open .nav__links { transform: none; }
+  .nav__toggle { display: block; }
+  .nav .btn--sm { margin-left: auto; }
+  .nav.is-open .nav__toggle span:first-child { transform: translateY(4px) rotate(45deg); }
+  .nav.is-open .nav__toggle span:last-child { transform: translateY(-4px) rotate(-45deg); }
+  .hero__grid, .split, .about, .contact__grid { grid-template-columns: 1fr; }
+  .hero__media { max-width: 440px; margin-inline: auto; width: 100%; }
+  .floating-card { left: -8px; }
+  .about__media { max-width: 420px; }
+}
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .benefits, .steps, .cards, .form__row { grid-template-columns: 1fr; }
+  .hero__cta .btn { width: 100%; }
+  .compare__row { padding: 1rem; font-size: .88rem; grid-template-columns: 1fr 1fr 1fr; gap: .5rem; }
+  .credentials li { grid-template-columns: 1fr; gap: .2rem; }
+  .brand__text small { display: none; }
+}
+
+.btn--wa { background: #25d366; color: #0b2e1a; }
+.btn--wa:hover { background: #1fbf5b; }
+</style>
+</head>
+<body>
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a href="#top" class="brand" aria-label="Inicio">
+      <span class="brand__mark">TG</span>
+      <span class="brand__text">Mediación<small>Torres &amp; Guerrero</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#mediacion">¿Qué es?</a>
+      <a href="#materias">Materias</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#mediador">El mediador</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a href="#contacto" class="btn btn--primary btn--sm">Agendar</a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Mediación familiar · salud · financiera</p>
+        <h1>Acuerdos que cuidan<br><em>lo que más importa.</em></h1>
+        <p class="lead">Resuelve conflictos de alimentos, cuidado personal o visitas —y también reclamos contra clínicas o bancos— sin un juicio largo y desgastante. Un abogado con más de 20 años de ejercicio te acompaña a construir un acuerdo justo, confidencial y con validez legal.</p>
+        <div class="hero__cta">
+          <a href="#contacto" class="btn btn--primary">Agenda tu primera sesión</a>
+          <a data-whatsapp href="#" class="btn btn--ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+        <ul class="hero__trust">
+          <li><strong>Mediador N° 3617</strong><span>Registro Min. de Justicia</span></li>
+          <li><strong>+20 años</strong><span>de ejercicio profesional</span></li>
+          <li><strong>100% online</strong><span>Por videollamada</span></li>
+        </ul>
+      </div>
+      <div class="hero__media reveal">
+        <figure class="portrait">
+          <img src="/assets/rodrigo-torres.webp" alt="Rodrigo Torres Jurado, abogado mediador" data-fallback="RT" width="1000" height="1250">
+          <figcaption>
+            <strong>Rodrigo Torres Jurado</strong>
+            <span>Abogado · Mediador · Árbitro</span>
+          </figcaption>
+        </figure>
+        <div class="floating-card">
+          <span class="floating-card__dot"></span>
+          <div><strong>Primera orientación sin costo</strong><span>Te explicamos tus opciones</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ ES -->
+  <section class="section" id="mediacion">
+    <div class="container split">
+      <div class="reveal">
+        <p class="eyebrow">¿Qué es la mediación?</p>
+        <h2>Una conversación guiada, no una batalla.</h2>
+      </div>
+      <div class="reveal">
+        <p>La mediación es un proceso en que un tercero imparcial —el mediador— ayuda a las partes a dialogar y a encontrar por sí mismas una solución. No impone decisiones: facilita que lleguen a un acuerdo que les acomode a ambos.</p>
+        <p>En materias de familia como <strong>alimentos, cuidado personal y relación directa y regular</strong>, la mediación es un <strong>paso previo obligatorio</strong> antes de demandar (art. 106, Ley N° 19.968). El acuerdo alcanzado se somete a aprobación del tribunal y tiene el mismo valor que una sentencia.</p>
+        <p>Lo mismo ocurre con los <strong>reclamos por daños en atenciones de salud</strong>: antes de demandar a una clínica o prestador privado es obligatorio pasar por mediación (Ley N° 19.966). Y si tienes un conflicto con un banco, aseguradora o casa comercial, la <strong>mediación financiera</strong> es una vía rápida para resolverlo sin juicio.</p>
+      </div>
+    </div>
+    <div class="container benefits">
+      <article class="benefit reveal">
+        <div class="benefit__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Más rápido</h3>
+        <p>Un acuerdo puede lograrse en pocas sesiones, frente a los meses que puede tardar un juicio.</p>
+      </article>
+      <article class="benefit reveal">
+        <div class="benefit__icon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>Confidencial</h3>
+        <p>Lo que se conversa en mediación queda en la mediación. No puede usarse luego en un juicio.</p>
+      </article>
+      <article class="benefit reveal">
+        <div class="benefit__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></div>
+        <h3>Cuida las relaciones</h3>
+        <p>Especialmente importante cuando hay hijos: se acuerda pensando en ellos, no contra el otro.</p>
+      </article>
+      <article class="benefit reveal">
+        <div class="benefit__icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/><path d="m15 17 2 2 4-4"/></svg></div>
+        <h3>Con validez legal</h3>
+        <p>El acta de acuerdo aprobada por el tribunal es exigible igual que una sentencia judicial.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MATERIAS -->
+  <section class="section section--tint" id="materias">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Materias que mediamos</p>
+        <h2>Te ayudamos a acordar en</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card__tag">Familia</span>
+          <h3>Pensión de alimentos</h3>
+          <p>Fijación, aumento, rebaja o cese de la pensión. Montos realistas y formas de pago claras.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">Familia</span>
+          <h3>Cuidado personal</h3>
+          <p>Con quién vivirán los hijos, o acuerdos de cuidado compartido que funcionen en el día a día.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">Familia</span>
+          <h3>Relación directa y regular</h3>
+          <p>Régimen de visitas, vacaciones, fechas especiales y comunicación con los hijos.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">Familia</span>
+          <h3>Divorcio y compensación económica</h3>
+          <p>Acuerdo completo y suficiente para un divorcio de mutuo acuerdo, régimen de bienes y compensación.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">Salud</span>
+          <h3>Reclamos contra clínicas</h3>
+          <p>Daños derivados de una atención de salud en prestadores privados. Mediación previa obligatoria para poder demandar.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__tag">Financiera</span>
+          <h3>Bancos, créditos y seguros</h3>
+          <p>Cobros indebidos, repactaciones, seguros no pagados o fraudes con tarjetas frente a bancos, aseguradoras y casas comerciales.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Cómo funciona</p>
+        <h2>Cuatro pasos hacia tu acuerdo</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Orientación inicial</h3>
+          <p>Nos cuentas tu caso y te explicamos si la mediación es el camino adecuado.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">02</span>
+          <h3>Citación a la otra parte</h3>
+          <p>Contactamos e invitamos a la otra persona a participar, de forma respetuosa.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">03</span>
+          <h3>Sesiones de mediación</h3>
+          <p>Conversaciones guiadas por videollamada, conjuntas o por separado si es necesario. Sin traslados.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">04</span>
+          <h3>Acta y aprobación</h3>
+          <p>Redactamos el acuerdo y lo enviamos al tribunal para su aprobación. Si no hay acuerdo, se emite el acta de mediación frustrada para poder demandar.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- COMPARATIVA -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--light">Mediación vs. juicio</p>
+        <h2>La diferencia se nota</h2>
+      </div>
+      <div class="compare reveal">
+        <div class="compare__row compare__row--head"><span></span><span>Mediación</span><span>Juicio</span></div>
+        <div class="compare__row"><span>Duración</span><span class="yes">Semanas</span><span>Meses o años</span></div>
+        <div class="compare__row"><span>Quién decide</span><span class="yes">Ustedes</span><span>El juez</span></div>
+        <div class="compare__row"><span>Confidencialidad</span><span class="yes">Total</span><span>Audiencias y expediente</span></div>
+        <div class="compare__row"><span>Desgaste emocional</span><span class="yes">Bajo</span><span>Alto</span></div>
+        <div class="compare__row"><span>Validez legal</span><span class="yes">Sí, aprobada por tribunal</span><span>Sí</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIADOR -->
+  <section class="section" id="mediador">
+    <div class="container about">
+      <div class="about__media reveal">
+        <img src="/assets/rodrigo-oficina.webp" alt="Rodrigo Torres Jurado en su oficina" data-fallback="RT" width="1000" height="1339">
+      </div>
+      <div class="about__copy reveal">
+        <p class="eyebrow">Tu mediador</p>
+        <h2>Rodrigo Torres Jurado</h2>
+        <p class="lead">Abogado (Universidad Andrés Bello, aprobado con distinción) y socio de <strong>Torres &amp; Guerrero Abogados</strong>.</p>
+        <p>Desde 2006 ejerce como abogado litigante en materias civiles, penales, laborales, de familia y arbitrales, y asesora a personas y empresas. Esa experiencia en tribunales le permite saber cómo se evalúan los acuerdos y por qué muchos conflictos se resuelven mejor conversando. Hoy integra los registros oficiales de mediadores en familia, salud y finanzas, y atiende de forma 100% online en español, inglés y portugués.</p>
+        <ul class="credentials">
+          <li><span>Familia</span>Mediador Familiar · Inscripción N° 3617, Registro de Mediadores del Ministerio de Justicia</li>
+          <li><span>Salud</span>Mediador de Salud con prestadores privados · Registro N° 230, Superintendencia de Salud</li>
+          <li><span>Financiera</span>Mediador Financiero · Inscripción N° 0142-M, SERNAC</li>
+          <li><span>Arbitraje</span>Árbitro Concursal (Superintendencia de Insolvencia y Reemprendimiento) y Árbitro Financiero (SERNAC)</li>
+          <li><span>Formación</span>Abogado, Universidad Andrés Bello · Título otorgado por la Corte Suprema, 2006. Cursos en Yale University, Case Western Reserve University, Universidad de Granada y Universidad de León</li>
+          <li><span>Idiomas</span>Español, inglés y portugués (avanzado), italiano (intermedio)</li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary">Conversemos tu caso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tint" id="faq">
+    <div class="container narrow">
+      <div class="section__head reveal">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Resolvemos tus dudas</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal">
+          <summary>¿Es obligatoria la mediación?</summary>
+          <p>Sí, en causas de alimentos, cuidado personal y relación directa y regular es requisito previo para demandar. Sin el acta de mediación (con acuerdo o frustrada), el tribunal no acogerá a tramitación la demanda, salvo excepciones legales como situaciones de violencia intrafamiliar.</p>
+        </details>
+        <details class="reveal">
+          <summary>¿Qué pasa si la otra parte no asiste?</summary>
+          <p>Si la otra persona no concurre tras ser citada, se levanta un acta de mediación frustrada, que te habilita para presentar la demanda ante el Juzgado de Familia.</p>
+        </details>
+        <details class="reveal">
+          <summary>¿El acuerdo tiene validez legal?</summary>
+          <p>Sí. El acta de acuerdo se remite al tribunal para su aprobación y, una vez aprobada, tiene el valor de una sentencia ejecutoriada: puede exigirse su cumplimiento.</p>
+        </details>
+        <details class="reveal">
+          <summary>¿Cómo funcionan las sesiones online?</summary>
+          <p>Toda la mediación se realiza por videollamada: solo necesitas un celular o computador con conexión a internet. Así puedes mediar desde tu casa, aunque la otra parte viva en otra ciudad o país. También atendemos en inglés y portugués.</p>
+        </details>
+        <details class="reveal">
+          <summary>¿Qué es la mediación en salud?</summary>
+          <p>Si sufriste un daño a causa de una atención de salud en una clínica o prestador privado, la ley exige intentar una mediación antes de demandar (Ley N° 19.966). Se realiza ante un mediador inscrito en la Superintendencia de Salud, como es el caso de Rodrigo Torres Jurado (Registro N° 230).</p>
+        </details>
+        <details class="reveal">
+          <summary>¿Y la mediación financiera?</summary>
+          <p>Es un mecanismo para resolver conflictos de consumidores con bancos, aseguradoras, cajas de compensación o casas comerciales, con un mediador inscrito en SERNAC. Es voluntaria, rápida y evita un juicio. Si no hay acuerdo, existe además la vía del arbitraje financiero.</p>
+        </details>
+        <details class="reveal">
+          <summary>¿Por qué elegir una mediación privada?</summary>
+          <p>Ofrece mayor disponibilidad de horarios, sesiones más ágiles y la ventaja de un mediador abogado que conoce cómo los tribunales evalúan los acuerdos, ayudando a que sean claros, completos y aprobables.</p>
+        </details>
+        <details class="reveal">
+          <summary>¿Y si no llegamos a acuerdo?</summary>
+          <p>Se emite el acta de mediación frustrada y quedas habilitado para demandar. Si lo necesitas, el equipo de Torres &amp; Guerrero Abogados puede representarte en el juicio.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact" id="contacto">
+    <div class="container contact__grid">
+      <div class="reveal">
+        <p class="eyebrow">Agenda</p>
+        <h2>Da el primer paso hacia un acuerdo.</h2>
+        <p class="lead">Cuéntanos brevemente tu situación y te contactaremos dentro de 24 horas hábiles.</p>
+        <ul class="contact__list">
+          <li><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="m4 6 8 7 8-7"/></svg><a data-email href="#">rtorres@torresguerrero.cl</a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a data-whatsapp href="#" target="_blank" rel="noopener" data-whatsapp-label>+56 9 7478 3978</a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>100% online · Todo Chile y el extranjero</span></li>
+        </ul>
+      </div>
+      <form class="form reveal" id="contact-form" novalidate>
+        <div class="form__row">
+          <label>Nombre<input name="nombre" required autocomplete="name"></label>
+          <label>Teléfono<input name="telefono" type="tel" required autocomplete="tel"></label>
+        </div>
+        <label>Correo electrónico<input name="email" type="email" autocomplete="email"></label>
+        <label>Materia
+          <select name="materia" required>
+            <option value="">Selecciona una opción</option>
+            <option>Pensión de alimentos</option>
+            <option>Cuidado personal</option>
+            <option>Relación directa y regular</option>
+            <option>Divorcio / compensación económica</option>
+            <option>Mediación en salud (clínica / prestador)</option>
+            <option>Mediación financiera (banco, seguro, crédito)</option>
+            <option>Otra</option>
+          </select>
+        </label>
+        <label>Cuéntanos brevemente<textarea name="mensaje" rows="4"></textarea></label>
+        <button type="submit" class="btn btn--primary btn--block">Enviar por WhatsApp</button>
+        <a id="wa-send" class="btn btn--wa btn--block" href="#" target="_blank" rel="noopener" hidden>Abrir WhatsApp con tu mensaje</a>
+        <p class="form__note">Tus datos son confidenciales y solo se usarán para contactarte.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="brand brand--light">
+      <span class="brand__mark">TG</span>
+      <span class="brand__text">Torres &amp; Guerrero<small>Abogados · Mediación</small></span>
+    </div>
+    <p>© <span id="year"></span> Torres &amp; Guerrero Abogados. Todos los derechos reservados.</p>
+    <a href="/">torresguerrero.cl →</a>
+  </div>
+</footer>
+
+<a data-whatsapp href="#" class="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+</a>
+
+
+
+<script>
+// Datos de contacto: editar aquí.
+const CONFIG = {
+  whatsapp: "56974783978", // formato internacional sin "+" ni espacios
+  whatsappLabel: "+56 9 7478 3978",
+  email: "rtorres@torresguerrero.cl",
+  whatsappGreeting: "Hola, me gustaría información sobre el servicio de mediación.",
+};
+
+const waLink = (text) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+
+document.querySelectorAll("[data-whatsapp]").forEach((a) => {
+  a.href = waLink(CONFIG.whatsappGreeting);
+});
+document.querySelectorAll("[data-whatsapp-label]").forEach((a) => {
+  a.textContent = CONFIG.whatsappLabel;
+});
+document.querySelectorAll("[data-email]").forEach((a) => {
+  a.href = `mailto:${CONFIG.email}`;
+  a.textContent = CONFIG.email;
+});
+
+// Si una foto no existe, mostrar un monograma en su lugar.
+document.querySelectorAll("img[data-fallback]").forEach((img) => {
+  const swap = () => {
+    const div = document.createElement("div");
+    div.className = "img-fallback";
+    div.setAttribute("role", "img");
+    div.setAttribute("aria-label", img.alt);
+    div.textContent = img.dataset.fallback;
+    img.replaceWith(div);
+  };
+  if (img.complete && img.naturalWidth === 0) swap();
+  else img.addEventListener("error", swap, { once: true });
+});
+
+// Navegación
+const nav = document.querySelector(".nav");
+const toggle = document.querySelector(".nav__toggle");
+toggle.addEventListener("click", () => {
+  const open = nav.classList.toggle("is-open");
+  toggle.setAttribute("aria-expanded", open);
+});
+document.querySelectorAll(".nav__links a").forEach((a) =>
+  a.addEventListener("click", () => {
+    nav.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  })
+);
+const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 10);
+window.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+// Animaciones al hacer scroll
+const io = new IntersectionObserver(
+  (entries) =>
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-visible");
+        io.unobserve(e.target);
+      }
+    }),
+  { threshold: 0.12 }
+);
+document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+// Formulario: arma un mensaje y lo abre en WhatsApp.
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  let valid = true;
+  form.querySelectorAll("[required]").forEach((f) => {
+    const ok = f.value.trim() !== "";
+    f.classList.toggle("is-invalid", !ok);
+    if (!ok) valid = false;
+  });
+  if (!valid) return;
+  const d = Object.fromEntries(new FormData(form));
+  const text = [
+    "Hola, quisiera agendar una mediación.",
+    `Nombre: ${d.nombre}`,
+    `Teléfono: ${d.telefono}`,
+    d.email && `Correo: ${d.email}`,
+    `Materia: ${d.materia}`,
+    d.mensaje && `Detalle: ${d.mensaje}`,
+  ].filter(Boolean).join("\n");
+  const a = document.getElementById("wa-send");
+  a.href = waLink(text);
+  a.hidden = false;
+  form.querySelector("button[type=submit]").textContent = "Mensaje listo ✓ — toca el botón verde";
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+</body>
+</html>
