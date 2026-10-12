@@ -7,7 +7,9 @@ Landing page del estudio jurídico **Torres & Guerrero**, dirigido por el abogad
 ```
 site/
 ├── index.html        # Toda la página: markup, estilos y JS inline
-└── assets/
+├── mediacion/
+│   └── index.html    # Subweb de mediación (torresguerrero.cl/mediacion), autocontenida
+└── assets/            # Compartido por el sitio principal y la subweb
     ├── crest-mark.png       # Escudo del estudio (header, sobre fondo oscuro)
     ├── favicon.png          # Ícono de pestaña del navegador
     ├── logo-light.webp      # Logo completo (isotipo + wordmark), para el pie de página
@@ -41,6 +43,8 @@ Los siguientes datos están repetidos en varios lugares de `index.html` (barra s
 - Teléfono: `+56 9 7478 3978`
 - Correo: `contacto@torresguerrero.cl`
 - Dirección física: **pendiente de agregar** (se retiró la dirección de Morandé; falta incorporar la definitiva en la barra de contacto, el pie de página y los datos estructurados).
+
+La subweb `mediacion/index.html` tiene sus propios datos de contacto en el objeto `CONFIG` al inicio de su `<script>` (WhatsApp y correo `rtorres@torresguerrero.cl`); si cambian, hay que actualizarlos también ahí.
 
 ## Pendientes conocidos
 
